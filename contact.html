@@ -14,31 +14,50 @@
 <header>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Contact Me</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand"><strong>Landon Pohl</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="index.html">About Me</a>
-                <a class="dropdown-item" href="portfolio.html">My Portfolio</a>
-                <a class="dropdown-item" href="contact.html">Contact Me</a>
-              </div>
-            </li>
-          </ul>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">About Me</a>
+            <a class="nav-item nav-link" href="portfolio.html">My Portfolio</a>
+            <a class="nav-item nav-link active">Contact Me<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link disabled" tabindex="-1" aria-disabled="true"></a>
+          </div>
         </div>
       </nav>
 
 </header>
 
 <body>  
-    
+    <div class="container">
+        <div class="col-6">
+        <form>
+            <div class="row">
+        
+                <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="FirstName LastName">
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+    </div>
 </body>
 </html>
